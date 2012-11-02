@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+use strict;
+
+$_ = "home, sweet home!";
+s/home/cave/g;
+print "$_\n";
+

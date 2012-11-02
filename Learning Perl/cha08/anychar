@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+use strict;
+
+$_ = "I saw Barney\ndown at the bowling alley\nwith fred\nlast night.\n";
+print;
+
+if (/Barney.*fred/) {
+    print "There may be some error!\n";
+}
+else {
+    print "Can't match in first time!\n";
+}
+
+if (/Barney.*fred/s) {
+    print "That string mentions fred after Barney!\n";
+}
+

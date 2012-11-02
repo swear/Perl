@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+use strict;
+
+$_ = "green scaly dinosaur\n";
+print;
+s/(\w+) (\w+)/$2, $1/;
+print;
+s/^/huge, /;
+print;
+s/,.*een//;
+print;
+s/green/red/;
+print;
+s/\w+$/($`!)$&/;
+print;
+s/\s+(!\W+)/$1 /;
+print;
+s/huge/gigantic/;
+print;
+

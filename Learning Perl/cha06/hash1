@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+use strict;
+
+my %family_name;
+$family_name{"fred"} = "flintstone";
+$family_name{"barney"} = "rubbles";
+
+foreach my $person (qw< barney fred >) {
+    print "I've heard of $person $family_name{$person}.\n";
+}
+

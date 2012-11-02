@@ -1,0 +1,6 @@
+#!/usr/bin/perl
+foreach (1..10) {
+    my($square) = $_ * $_;
+    print "$_ squared is $square.\n";
+}
+

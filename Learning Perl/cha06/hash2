@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+use strict;
+
+my %some_hash = ("foo", 35, "bar", 12.4, 2.5, "hello",
+    "wilma", 1.72e30, "betty", "bye\n");
+my @any_array = %some_hash;
+print "@any_array\n";
+

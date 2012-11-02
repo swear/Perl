@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+use strict;
+
+foreach (<STDIN>) {
+    print "I saw $_";
+}
+

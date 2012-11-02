@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+use strict;
+
+my %last_name = (
+    "fred" => "flintstone",
+    "dino" => undef,
+    "barney" => "rubble",
+    "betty" => "rubble",
+);
+
+foreach my $person (qw/ fred dino barney betty /) {
+    print "$person $last_name{$person}\n";
+}
+

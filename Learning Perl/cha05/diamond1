@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+use strict;
+
+while (defined(my $line = <>)) {
+    chomp($line);
+    print "It was $line that I saw!\n";
+}
+

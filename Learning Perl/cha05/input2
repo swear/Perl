@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+use strict;
+
+while (<STDIN>) {
+    print "I saw $_";
+}
+

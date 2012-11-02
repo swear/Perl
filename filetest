@@ -1,0 +1,34 @@
+#!/usr/bin/perl
+
+$f1 = "07-01.log";
+$f2 = "07-02.log";
+$f3 = "07-03.log";
+
+#open $fd1, ">", $f1;
+#open $fd2, ">", $f2;
+#open $fd3, ">", $f3;
+#%files = ($f1 => $fd1, $f2 => $fd2, $f3 => $fd3);
+
+%files = ();
+
+sub get_fd {
+    $filename = shift;
+    if (!defined($files{$filename})) {
+        open $fd, ">", $filename;
+        $files{$filename} = $fd;
+    }
+    return $files{$filename};
+}
+
+$fd = get_fd($f1);
+print $fd "hello\n";
+$fd = get_fd($f2);
+print $fd "nihao\n";
+$fd = get_fd($f3);
+print $fd "bon jour\n";
+
+
+while (($name, $handler) = each %files) {
+    close $handler;
+}
+

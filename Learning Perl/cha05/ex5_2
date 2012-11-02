@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+use strict;
+
+chomp(my @lines = <STDIN>);
+print "1234568790" x 3 . "\n";
+foreach (@lines) {
+    printf "%20s\n", $_;
+}
+

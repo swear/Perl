@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+use strict;
+
+$_ = "fred flintstone";
+if (s/fred/wilma/) {
+    print "Successfully replaced fred with wilma!\n";
+}
+

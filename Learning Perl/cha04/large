@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+sub larger_of_fred_or_barney
+{
+    if ($fred > $barney) {
+        $fred;
+    }
+    else {
+        $barney;
+    }
+}
+
+chomp($fred=<STDIN>);
+chomp($barney=<STDIN>);
+print "The larger of $fred and $barney is " . &larger_of_fred_or_barney . "\n";
+

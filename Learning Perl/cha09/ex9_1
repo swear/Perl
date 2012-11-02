@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+use strict;
+
+die "please enter pattern and strings" if @ARGV != 2;
+my $what = shift @ARGV;
+my $str = shift @ARGV;
+print "\$what is '$what', \$str is '$str'\n";
+if ($str =~ /($what){3}/) {
+    print "Match!\n";
+}
+else {
+    print "Not Match!\n";
+}
+

@@ -1,0 +1,19 @@
+#!/usr/bin/perl
+use strict;
+
+my %last_name = (
+    "fred" => "flintstone",
+    "barney" => "rubble",
+    "wilma" => "flintstone",
+);
+
+while (<>) {
+    chomp;
+    if (exists $last_name{$_}) {
+        print "$_ $last_name{$_}\n";
+    }
+    else {
+        print "I don't know $_!\n";
+    }
+}
+

@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+use strict;
+use 5.010;
+
+sub greet
+{
+    state @name;
+    print "Hi, $_[0]! ";
+    if (@name) {
+        print "I've seen: @name\n";
+    }
+    else {
+        print "You are the first on here!\n";
+    }
+    push @name, $_[0];
+}
+
+greet("Fred");
+greet("Barney");
+greet("Wilma");
+greet("Betty");
+

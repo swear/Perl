@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+use strict;
+use 5.010;
+
+sub marine
+{
+    state $n = 0;
+    $n += 1;
+    print "Hello, sailor number $n!\n";
+}
+
+&marine;
+&marine;
+&marine;
+&marine;
+

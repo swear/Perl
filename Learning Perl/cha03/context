@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+@people = qw( fred barney betty );
+@sorted = sort @people;
+$number = 42 + @people;
+print "@people\n";
+print "$number\n";
+

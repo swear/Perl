@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+use strict;
+
+my $x = join ":", 4, 6, 8, 10, 12;
+print "$x\n";
+my @values = split /:/, $x;
+print "@values\n";
+my $z = join "-", @values;
+print "$z\n";
+

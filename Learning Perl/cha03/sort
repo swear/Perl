@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+@rocks = qw/bedrock slate rubble granite/;
+@sorted = sort(@rocks);
+@back = reverse sort @rocks;
+@numbers = sort 97..102;
+print "@rocks\n";
+print "@sorted\n";
+print "@back\n";
+print "@numbers\n";
+

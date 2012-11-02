@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+@array = qw# dino fred barney #;
+$m = shift(@array);
+print "\$m = $m, \@array = @array\n";
+$n = shift @array;
+print "\$n = $n, \@array = @array\n";
+shift @array;
+print "\@array = @array\n";
+$o = shift @array;
+print "\$o = $o\n";
+unshift(@array, 5);
+print "\@array = @array\n";
+unshift @array, 4;
+print "\@array = @array\n";
+@others = 1..3;
+unshift @array, @others;
+print "\@array = @array\n";
+

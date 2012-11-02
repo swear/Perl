@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+use strict;
+
+sub division
+{
+    $_[0] / $_[1];
+}
+
+my $quotient = division 355, 113;
+print "\$quotient = $quotient\n";
+

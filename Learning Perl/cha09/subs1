@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+use strict;
+
+$_ = "He's out bowling with Barney tonight.";
+s/Barney/Fred/;
+print "$_\n";
+print '-' x 70 . "\n";
+s/Wilma/Betty/;
+print '-' x 70 . "\n";
+s/with (\w+)/against $1's team/;
+print "$_\n";
+

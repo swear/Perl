@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+@fred = 6..10;
+@barney = reverse(@fred);
+@wilma = reverse 6..10;
+@fred = reverse @fred;
+print "@fred\n";
+print "@barney\n";
+print "@wilma\n";
+

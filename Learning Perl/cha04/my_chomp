@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+use strict;
+
+sub chomp
+{
+    print "Munch, munch!\n";
+}
+
+&chomp;
+

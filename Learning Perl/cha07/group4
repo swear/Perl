@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+use strict;
+
+$_ = "yabba dabba doo";
+if (/y((.)(.)\3\2) d\1/) {
+    print "It matched!\n";
+}
+

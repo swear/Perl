@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+use strict;
+
+print "Enter length:";
+chomp(my $length=<STDIN>);
+print "Enter some strings:\n";
+chomp(my @lines = <STDIN>);
+#print "1234568790" x 7 . "\n";
+print "1234568790" x (($length+9)/10) . "\n";
+foreach (@lines) {
+    printf "%${length}s\n", $_;
+}
+

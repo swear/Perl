@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+use strict;
+
+$_ = "yabba dabba doo";
+if (/y(....) d\1/) {
+    print "It matched the same after y and d!\n";
+}
+

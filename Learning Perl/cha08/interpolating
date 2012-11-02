@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+use strict;
+
+my $what = "larry";
+
+while (<>) {
+    if (/^($what)/) {
+        print "We saw $what in beginning of $_";
+    }
+}
+

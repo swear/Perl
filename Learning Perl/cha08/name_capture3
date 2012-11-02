@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+use strict;
+use 5.010;
+
+my $names = 'Fred Flintstone and Wilma Flintstone';
+if ($names =~ m/(?<last_name>\w+) and \w+ \g{last_name}/) {
+    say "I saw $+{last_name}";
+}
+

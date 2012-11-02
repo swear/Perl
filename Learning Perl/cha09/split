@@ -1,0 +1,14 @@
+#!/usr/bin/perl
+use strict;
+
+my @fields;
+@fields = split /:/, "abc:def:g:h";
+print "@fields\n";
+@fields = split /:/, "abc:def::g:h";
+print "@fields\n";
+@fields = split /:/, ":::a:b:c:::";
+print "@fields\n";
+my $some_input = "This  is a \t       test.\n";
+my @args = split /\s+/, $some_input;
+print "@args\n";
+

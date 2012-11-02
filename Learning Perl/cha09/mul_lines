@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+use strict;
+
+$_ = "I'm much better\nthan Barney is \nat bowling,\nWilma.\n";
+print '-' x 70 . "\n";
+print "Found 'wilma' at start of line\n" if /^wilma\b/i;
+print '-' x 70 . "\n";
+print "Found 'wilma' at start of line\n" if /^wilma\b/im;
+

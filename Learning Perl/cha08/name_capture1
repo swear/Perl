@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+use strict;
+use 5.010;
+
+my $names = 'Fred or Barney';
+if ($names =~ /(?<name1>\w+) (?:and|or) (?<name2>\w+)/) {
+    say "I saw $+{name1} and $+{name2}";
+}
+

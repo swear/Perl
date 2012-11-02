@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+sub max
+{
+    my($m, $n) = @_;
+    if ($m > $n) { $m } else { $n }
+}
+
+$n = &max(15, 10);
+print "\$n = $n \n";
+

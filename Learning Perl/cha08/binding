@@ -1,0 +1,8 @@
+#!/usr/bin/perl
+use strict;
+
+my $some_other = "I dream of betty rubble.";
+if ($some_other =~ /\brub/) {
+    print "Aye, there's the rub.\n";
+}
+
